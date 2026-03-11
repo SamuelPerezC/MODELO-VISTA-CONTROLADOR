@@ -1,6 +1,6 @@
 class numero:
     def __init__(self,numeros):
-        self.numeros=self.numeros
+        self.numeros=numeros
         
     def get_numero(self):
         return self.numeros
@@ -27,9 +27,11 @@ class numero:
     
     #==============================================================================#
     
-    def validar_numero(self):
+    def es_par(self):
         if self.numeros%2==0:
             return True
+        else:
+            return False
         
         
         
