@@ -15,3 +15,17 @@ class Usuario:
 
     def set_id(self, id):
         self.id = id
+        
+    
+    def validar_nombre(self):
+
+        # quitar espacios al inicio y final
+        nombre_limpio = self.nombre.strip()
+
+        if not nombre_limpio:
+            return False
+        
+        if len(nombre_limpio) <= 3:
+            return False
+
+        return True
